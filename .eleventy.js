@@ -1,6 +1,6 @@
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
-module.exports = function (elventyConfig) {
-  elventyConfig.addPassthroughCopy({
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({
     "./public/": "/",
   });
 
