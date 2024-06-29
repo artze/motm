@@ -1,6 +1,6 @@
-# 11ty-experiment
+# 11ty-theme-cirrus
 
-Explore features of 11ty and create minimal styling. Styling is heavily based on [eleventy-duo](https://github.com/yinkakun/eleventy-duo).
+A minimal 11ty theme heavily based on [eleventy-duo](https://github.com/yinkakun/eleventy-duo).
 
 ## Development
 
