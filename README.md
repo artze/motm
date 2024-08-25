@@ -1,6 +1,6 @@
-# 11ty-theme-cirrus
+# Technics and Human Development: Extracts
 
-A minimal 11ty theme heavily based on [eleventy-duo](https://github.com/yinkakun/eleventy-duo).
+Selected extracts and paraphrases from the book Technics and Human Developement (The Myth of the Machine Volume One) from Lewis Mumford.
 
 ## Development
 
