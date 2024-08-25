@@ -64,6 +64,11 @@ p {
   margin-top: 3.2rem;
 }
 
+p + hr {
+  /* 32px */
+  margin-top: 3.2rem;
+}
+
 h2 + p,
 h3 + p,
 h4 + p {
@@ -89,6 +94,10 @@ h1 + * {
   }
 
   * + p {
+    margin-top: 2.8rem;
+  }
+
+  p + hr {
     margin-top: 2.8rem;
   }
 
