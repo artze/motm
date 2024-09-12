@@ -5,7 +5,7 @@ html {
 body {
   font-size: var(--text-lg);
   line-height: 1.54;
-  color: var(--color);
+  color: var(--text-color);
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
@@ -48,36 +48,31 @@ p {
 
 * + h1,
 * + h2 {
-  /* 80px */
   margin-top: 8rem;
 }
 
 * + h3,
 * + h4,
 * + h5 {
-  /* 48px */
   margin-top: 4.8rem;
 }
 
 * + p {
-  /* 32px */
   margin-top: 3.2rem;
 }
 
-p + hr {
-  /* 32px */
+hr {
+  margin-bottom: 3.2rem;
   margin-top: 3.2rem;
 }
 
 h2 + p,
 h3 + p,
 h4 + p {
-  /* 16px */
   margin-top: 1.6rem;
 }
 
 h1 + * {
-  /* 64px */
   margin-top: 6.4rem;
 }
 
@@ -97,7 +92,8 @@ h1 + * {
     margin-top: 2.8rem;
   }
 
-  p + hr {
+  hr {
+    margin-bottom: 2.8rem;
     margin-top: 2.8rem;
   }
 
