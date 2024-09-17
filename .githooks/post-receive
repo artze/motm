@@ -1,0 +1,28 @@
+#!/bin/bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use 22.3.0
+
+cd "$WORKTREES_BASE_PATH/motm"
+
+echo -n "npm install..."
+npm install
+echo "done"
+
+echo -n "npm run build..."
+npm run build
+echo "done"
+
+if [[ -d "$SERVE_BASE_PATH/motm" ]]; then
+  echo -n "Removing serve dir..."
+  rm -rf "$SERVE_BASE_PATH/motm"
+  echo "done"
+fi
+
+echo -n "Add serve files..."
+mkdir -p "$SERVE_BASE_PATH/motm"
+cp -a "$WORKTREES_BASE_PATH/motm/_site/." "$SERVE_BASE_PATH/motm/"
+echo "done"
+
+echo "Task complete"
